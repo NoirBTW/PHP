@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        Feedback form
+    </header>
+    <main>
+        <div class="container">
+            <form action="https://httpbin.org/post" method="post">
+                <!-- <input type="text" name="method" value="delete"> -->
+                <div class="mb-3">
+                    <label for="name">Enter your name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="mb-3">
+                    <label for="secondname">Enter your secondname</label>
+                    <input type="text" name="secondname" id="secondname">
+                </div>
+                <div class="mb-3">
+                    <label for="email">Enter your email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="mb-3">
+                    <textarea name="" id="" cols="30" rows="10">
+                        desc
+                    </textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <a href="back.php">To second</a>
+    </main>
+</body>
+</html>

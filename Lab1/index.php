@@ -6,10 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        <?php
-        echo "Hello, PHP"
-        ?>
-    </h1>
+
+<?php
+
+if (file_exists('old.txt')) {
+    if (rename('old.txt', 'new.txt')) {
+        echo "Файл успешно переименован.";
+    } else {
+        echo "Ошибка переименования файла.";
+    }
+} else {
+    echo "Файл 'old.txt' не существует.";
+}
+?>
+
 </body>
 </html>
